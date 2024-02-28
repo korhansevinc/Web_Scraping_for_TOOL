@@ -8,7 +8,7 @@ import sys
 
 # In older versions of selenium you must specify the PATH in the wd like here : webdriver.Chrome(PATH)
 # But later versions (>4.16) we can use it without parameters. Take it account while using.
-# PATH= "C:\\Users\\Korhan\\Desktop\\Web_Scraping_Images\\chromedriver.exe"
+# PATH= "C:\\Users\\new\\Desktop\\WebScrapingImages\\chromedriver.exe"
 
 wd = webdriver.Chrome()
 # wd.get("https://www.google.com/")
@@ -88,11 +88,13 @@ def download_image(download_path, url, file_name):
 
 
 def main():
+	
+	# Taking users input as an argument
     user_input = get_input_from_user()
-    urls = get_images_from_google(user_input , wd, 2 , 6)
+    urls = get_images_from_google(user_input , wd, 2 , 20)
 
     for i, url in enumerate(urls):
-        download_image("imgs/", url, str(i) + ".jpg")
+        download_image("imgs/", url, user_input[0] + str(i) + ".jpg")
 
     wd.quit()
 	
