@@ -257,9 +257,16 @@ zipp                                     3.17.0
 
 
 # Nasıl Kullanılır ? 
+
 terminalde şu şekilde çağrılabilir : < python dosyasının adı > < görsel adedi > < gorselin context'i / aratilmasi istenilen metin.>
 (< ve > isaretleri gerekenleri birbirinden ayırmak için kullanıldı. Çağırırken dikkate almayın.)
 # Örnek kullanımlar : 
+```bash
+python web_scraping_undetected.py 20 cats
+```
 python web_scraping_undetected.py 20 cats
 (Çoğul olunca da bir fark olmayacak, boşuklu - boşluksuz direkt stringi kullanabiliyoruz.)
 python web_scraping_undetected.py 50 lord of the rings
+```bash
+python web_scraping_undetected.py 50 lord of the rings
+```
