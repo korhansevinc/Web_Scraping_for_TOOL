@@ -1,6 +1,6 @@
 # WEB SCRAPING:
 Dizinde 2 farklı image scraping yapan script bulunmakta.
-Bunlardan ilki olan web_scraping.py çalıştığında chrome eğer otomatize edilmiş olduğunu fark ederse blokluyor.
+Bunlardan ilki olan web_scraping.py çalıştığında chrome, eğer otomatize edilmiş olduğunu fark ederse blokluyor.
 Genelde her çalıştırmada 40 - 50 tane resim çekebiliyor.
 Bundan dolayı web_scraping_undetected.py'de chrome'un farketmemesi ve daha fazla 
     resim indirebilmek için undetected_chromedriver kullanıldı.
@@ -254,3 +254,12 @@ wrapt                                    1.16.0
 wsproto                                  1.2.0
 yarl                                     1.9.4
 zipp                                     3.17.0
+
+
+# Nasıl Kullanılır ? 
+terminalde şu şekilde çağrılabilir : < python dosyasının adı > < görsel adedi > < gorselin context'i / aratilmasi istenilen metin.>
+(< ve > isaretleri gerekenleri birbirinden ayırmak için kullanıldı. Çağırırken dikkate almayın.)
+# Örnek kullanımlar : 
+python web_scraping_undetected.py 20 cats
+(Çoğul olunca da bir fark olmayacak, boşuklu - boşluksuz direkt stringi kullanabiliyoruz.)
+python web_scraping_undetected.py 50 lord of the rings
